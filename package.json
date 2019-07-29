@@ -1,0 +1,67 @@
+{
+  "name": "timer",
+  "productName": "timer",
+  "version": "1.0.0",
+  "description": "Timer for students",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "build": {
+    "asar": true
+    },
+  "keywords": [],
+  "author": {
+    "name": "Leandro Pinto",
+    "email": "leandro.pnto@gmail.com",
+    "url": "https://github.com/leandropnto"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "icon": "src/assets/img/icon.png.icns"
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "timer"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "json": "^9.0.6",
+    "jsonfile-promised": "^0.0.1",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.43",
+    "@electron-forge/maker-deb": "6.0.0-beta.43",
+    "@electron-forge/maker-rpm": "6.0.0-beta.43",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.43",
+    "@electron-forge/maker-zip": "6.0.0-beta.43",
+    "electron": "5.0.8"
+  }
+}

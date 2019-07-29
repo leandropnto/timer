@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <header>
+            <span>Timer</span>
+            <ul>
+                <li class="option minimize">
+                    <i class="material-icons">
+                        minimize
+                    </i>
+                </li>
+                <li class="option close">
+                    <i class="material-icons">
+                        close
+                    </i>
+                </li>
+            </ul>
+        </header>
+        <div id="link-sobre">
+            <img class="info-button" src="../../assets/img/info-button.svg">
+        </div>
+        <h1 class="titulo">Timer</h1>
+        <div class="timer">
+            <div class="container">
+                <div class="relogio">
+                    <span class="tempo">00:00:00</span>
+                </div>
+                <div class='controles'>
+                    <img class="botao-play" src="../../assets/img/play-button.svg">
+                </div>
+            </div>
+
+            <div class="curso-container">
+                <span class="curso">javascript</span>
+            </div>
+        </div>
+
+        <div class="group">
+            <input type="text" class='campo-adicionar' required>
+            <button class="botao-adicionar" disabled>
+                <img src="../../assets/img/plus.svg">
+            </button>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Novo curso</label>
+        </div>
+    </section>
+
+    <script>require('./renderer')</script>
+</body>
+
+</html>

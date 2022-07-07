@@ -54,7 +54,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "json": "^9.0.6",
     "jsonfile-promised": "^0.0.1",
-    "moment": "^2.24.0"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "@electron-forge/cli": "6.0.0-beta.43",
